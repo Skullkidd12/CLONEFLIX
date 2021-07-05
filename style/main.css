@@ -1,0 +1,113 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{ background-color: var(--preto);
+    font-family: sans-serif;
+    color:rgb(211, 211, 211);
+
+}
+
+    
+header .logo{
+color: var(--vermelho);
+font-family: "Arial Black";
+font-size: 40px;
+margin-left: 5px;
+}
+
+
+header nav a{ color: rgb(124, 124, 124);
+    text-decoration: none;
+    margin-right: 10px;
+
+}
+
+header nav a:hover{
+    color: white;
+    
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+.filme-principal{
+    font-size: 15px;
+    background-image: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/img/house_cover2.jpg);
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+
+}
+
+.filme-principal .descricao{
+    margin-bottom: 70px ;
+    margin-top: 15px;
+}
+
+.container .titulo{
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 15%;
+    color: white;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition:  .3s ease-in-out;
+}
+
+.botao:hover{
+    background-color: whitesmoke;
+    color: var(--preto);
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+    margin-right: 15px;
+}
+
+.filme-principal .container{
+    width: 60%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carousel-filmes{
+    margin-top: 30px;
+}
